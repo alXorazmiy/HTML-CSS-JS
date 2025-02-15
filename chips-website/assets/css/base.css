@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Titan+One&display=swap');
+
+:root {
+    --header-height: 3.5rem;
+    --first-color: hsl(170, 90%, 34%);
+    --first-color-dark: hsl(170, 100%, 28%);
+    --first-color-darken: hsl(170, 100%, 23%);
+    --second-color: hsl(45, 100%, 52%);
+    --second-color-dark: hsl(45, 100%, 20%);
+    --white-color: hsl(0, 0%, 100%);
+    --shadow-img: drop-shadow(0 12px 24px hsla(0, 0%, 0%, .4));
+    --shadow-circle: 0 12px 24px hsla(0, 0%, 0%, .4);
+    --shadow-button: 0 -4px 8px sla(0, 0%, 0%, .3);
+    --shadow-card: 0 -8px 24px sla(0, 0%, 0%, .3);
+    --shadow-text: 0 2px 4px    var(var(--first-color-darken));
+
+
+
+    --body-font: "Poppins", sans-serif;
+    --second-font: "Titan One", sans-serif;
+    --biggest-font-size: 3.5rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+
+
+    --font-regular: 400;
+    --font-semi-bold: 600;
+
+
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
+
+
+@media screen and (min-width: 1150px) {
+    :root {
+        --biggest-font-size: 5.5rem;
+        --h1-font-size: 2.5rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+    }
+}
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+ 
+body {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--first-color);
+    color: var(--white-color);
+}
+
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration:  none;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+.container {
+    max-width: 1120px;
+    margin-inline: 1.5rem;
+}
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+
+
+.section {
+    padding-block: 5rem 1rem;
+}
+
+
+.section__title {
+    font: var(--font-regular) var(--h1-font-size) var(--second-font);
+    text-align: center;
+    margin-bottom: 1.5rem;
+    text-shadow: var(--shadow-text);
+}
+
+
+.main {
+    overflow: hidden;
+}
+
+
+.shadow-header{
+    box-shadow: 0 2px 16px hsla(0, 0%, 0%, .15);
+}
