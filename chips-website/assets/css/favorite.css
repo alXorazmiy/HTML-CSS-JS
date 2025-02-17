@@ -7,6 +7,7 @@
     row-gap: 3rem;
     grid-template-columns: 100%;
     padding-bottom: 3rem;
+    margin: 0;
 }
 
 .favorites__data{
@@ -34,11 +35,11 @@
 
 .favorites__article {
     position: relative;
-    /* width: 200px; */
 }
 
 .favorites__img {
     width: 200px;
+    height: 270px;
     scale: 0.8;
     transition: scale .4s, filter .4s;
 }
@@ -61,11 +62,10 @@
     left: -.5rem;
 }
 
-
 .swiper {
     margin-inline: initial;
     overflow: visible;
-}
+} 
 
 
 :is(.swiper-slide-active, .swiper-slide-duplicate-active) .favorites__img {
@@ -73,9 +73,27 @@
     filter: var(--shadow-img);
 }
 
+
+:is(.swiper-slide-active, .swiper-slide-duplicate-active) .favorites__leaf-1, 
+:is(.swiper-slide-active, .swiper-slide-duplicate-active) .favorites__leaf-2 {
+    scale: 1;
+}
+
 .swiper-slide {
     display: flex;
-    justify-content: center; /* Markazga joylash uchun */
+    justify-content: center; 
     align-items: center;
-    width: 300px; /* Har bir slide o‘lchami */
+
+
+} 
+
+.favorites__swiper {
+    width: 100%;
+    height: auto;
 }
+
+.swiper-wrapper {
+    display: flex;
+    align-items: center;
+}
+

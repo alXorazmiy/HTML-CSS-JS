@@ -10,10 +10,14 @@ const shadowHeader = () =>{
 window.addEventListener('scroll', shadowHeader)
 
 
-const swiperFavorites = new Swiper(".favorites__swiper", {
-    loop: true,
-    grabCursor: true,
-    slidesPerView: "auto", 
-    centeredSlides: true, // ❌ 'auto' noto‘g‘ri, ✅ true bo‘lishi kerak
-    spaceBetween: 20, // Slide orasidagi masofa
-});
+
+const scrollUp = () =>{
+    const scrollUp = document.getElementById("scroll-up")
+    this.scrollY >=350 ? scrollUp.classList.add("show-scroll")
+                       : scrollUp.classList.remove("show-scroll")
+}
+
+window.addEventListener('scroll', scrollUp)
+
+
+

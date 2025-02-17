@@ -10,9 +10,9 @@
     --white-color: hsl(0, 0%, 100%);
     --shadow-img: drop-shadow(0 12px 24px hsla(0, 0%, 0%, .4));
     --shadow-circle: 0 12px 24px hsla(0, 0%, 0%, .4);
-    --shadow-button: 0 -4px 8px sla(0, 0%, 0%, .3);
-    --shadow-card: 0 -8px 24px sla(0, 0%, 0%, .3);
-    --shadow-text: 0 2px 4px    var(var(--first-color-darken));
+    --shadow-button: 0 -4px 8px hsla(0, 0%, 0%, .3);
+    --shadow-card: 0 -8px 24px hsla(0, 0%, 0%, .3);
+    --shadow-text: 0 2px 4px var(--first-color-darken);
 
 
 
@@ -112,4 +112,23 @@ img {
 
 .shadow-header{
     box-shadow: 0 2px 16px hsla(0, 0%, 0%, .15);
+}
+
+
+::-webkit-scrollbar {
+    width: .6rem;
+    background-color: hsl(170, 50%, 30%);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: hsl(170, 50%, 20%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: hsl(170, 50%, 15%);
+}
+
+
+.active_link {
+    color: var(--second-color);
 }
