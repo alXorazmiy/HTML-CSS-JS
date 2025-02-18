@@ -106,3 +106,44 @@
     bottom: 3rem;
     rotate: 15deg;
 }
+
+@media screen and (max-width: 768px) {
+    .products__content {
+        grid-template-columns: 90%;
+        justify-content: center;
+    }
+
+    .products__card {
+        height: 300px;
+    }
+
+    .products__img {
+        width: 180px;
+    }
+}
+
+@media screen and (min-width: 1150px) {
+    .products__container {
+        padding-top: 7.5rem;
+    }
+    .products__content {
+        grid-template-columns: repeat(3, 330px);
+        row-gap: 10rem 4rem;
+        justify-content: center;
+    }
+
+    .products__img {
+        width: 170px;
+        top: -3rem;
+    }
+
+    .products__card {
+        height: 350px;
+    }
+
+    .products__crab {
+        left: 30rem;
+    }
+
+   
+}

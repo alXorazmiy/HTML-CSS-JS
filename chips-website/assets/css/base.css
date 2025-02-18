@@ -132,3 +132,15 @@ img {
 .active_link {
     color: var(--second-color);
 }
+
+@media screen and (min-width: 1150px) {
+    .container {
+        max-width: 90%;
+        margin:auto
+    }
+    .grid {
+        display: grid;
+        gap: 3.5rem;
+    }
+    
+}
